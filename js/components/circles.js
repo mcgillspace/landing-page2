@@ -68,6 +68,6 @@ var Circle = function() {
   }
 }();
 
-$(document).ready(function() {
+ANGULAR_LOADER.ready('circles', function() {
   Circle.init();
 });

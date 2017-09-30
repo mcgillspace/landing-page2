@@ -22,250 +22,232 @@
 		//
 		// })
 		.state('index', {
-			url : "/?key",
-			params : {
-				key : { value : "" }
-			},
+			url : "/",
 			views : {
 				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
+					templateUrl: '/templates/navbar/main.html',
+					data : {
+						components: ['header-sticky']
+					}
 				},
 				'banner' : {
-					templateUrl: '/landing-page/templates/index/banner.html'
+					templateUrl: '/templates/index/banner.html',
+					data : {
+						components: ['index - banner']
+					}
 				},
 				'content' : {
-					templateUrl: '/landing-page/templates/index/main.html'
+					templateUrl: '/templates/index/main.html',
+					data : {
+						components: ['index - content']
+					}
+				},
+				'footer' : {
+					templateUrl: '/templates/footer/main.html'
 				}
 			}
 		})
 		.state('about', {
-			url : "/about?key",
-			params : {
-				key : { value : "" }
-			},
+			url : "/about",
 			views : {
 				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
+					templateUrl: '/templates/navbar/main.html',
+					data : {
+						components: ['header-sticky']
+					}
 				},
 				'banner' : {
-					templateUrl: '/landing-page/templates/about/banner.html'
+					templateUrl: '/templates/index/banner.html',
+					data : {
+						components: ['about - banner']
+					}
 				},
 				'content' : {
-					templateUrl: '/landing-page/templates/about/main.html'
+					templateUrl: '/templates/about/main.html',
+					data : {
+						components: ['about - content']
+					}
+				},
+				'footer' : {
+					templateUrl: '/templates/footer/main.html'
 				}
 			}
 		})
-		.state('about-csdc', {
-			url : "/about/csdc?key",
-			params : {
-				key : { value : "" }
-			},
-			views : {
-				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
-				},
-				'banner' : {
-					templateUrl: '/landing-page/templates/about/banner.html'
-				},
-				'content' : {
-					templateUrl: '/landing-page/templates/about/csdc.html'
-				}
-			}
-		})
-		.state('about-mssg', {
-			url : "/about/mssg?key",
-			params : {
-				key : { value : "" }
-			},
-			views : {
-				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
-				},
-				'banner' : {
-					templateUrl: '/landing-page/templates/about/banner.html'
-				},
-				'content' : {
-					templateUrl: '/landing-page/templates/about/mssg.html'
-				}
-			}
-		})
-		.state('about-education', {
-			url : "/about/education?key",
-			params : {
-				key : { value : "" }
-			},
-			views : {
-				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
-				},
-				'banner' : {
-					templateUrl: '/landing-page/templates/about/banner.html'
-				},
-				'content' : {
-					templateUrl: '/landing-page/templates/about/education.html'
-				}
-			}
-		})
-		.state('about-policy', {
-			url : "/about/policy?key",
-			params : {
-				key : { value : "" }
-			},
-			views : {
-				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
-				},
-				'banner' : {
-					templateUrl: '/landing-page/templates/about/banner.html'
-				},
-				'content' : {
-					templateUrl: '/landing-page/templates/about/policy.html'
-				}
-			}
-		})
-		.state('about-contact', {
-			url : "/about/contact?key",
-			params : {
-				key : { value : "" }
-			},
-			views : {
-				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
-				},
-				'banner' : {
-					templateUrl: '/landing-page/templates/about/banner.html'
-				},
-				'content' : {
-					templateUrl: '/landing-page/templates/about/contact.html'
-				}
-			}
-		})
-		.state('competitions', {
-			url : "/competitions?key",
-			params : {
-				key : { value : "" }
-			},
-			views : {
-				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
-				},
-				'banner' : {
-					templateUrl: '/landing-page/templates/competitions/banner.html'
-				},
-				'content' : {
-					templateUrl: '/landing-page/templates/under-construction.html'
-					// templateUrl: '/landing-page/templates/competitions/main.html'
-				}
-			}
-		})
-		.state('competitions-csdc', {
-			url : "/competitions/csdc?key",
-			params : {
-				key : { value : "" }
-			},
-			views : {
-				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
-				},
-				'banner' : {
-					templateUrl: '/landing-page/templates/competitions/banner.html'
-				},
-				'content' : {
-					templateUrl: '/landing-page/templates/under-construction.html'
-					// templateUrl: '/landing-page/templates/competitions/csdc.html'
-				}
-			}
-		})
-		.state('competitions-seds', {
-			url : "/competitions/seds?key",
-			params : {
-				key : { value : "" }
-			},
-			views : {
-				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
-				},
-				'banner' : {
-					templateUrl: '/landing-page/templates/competitions/banner.html'
-				},
-				'content' : {
-					templateUrl: '/landing-page/templates/under-construction.html'
-					// templateUrl: '/landing-page/templates/competitions/seds.html'
-				}
-			}
-		})
-		.state('research', {
-			url : "/research?key",
-			params : {
-				key : { value : "" }
-			},
-			views : {
-				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
-				},
-				'banner' : {
-					templateUrl: '/landing-page/templates/research/banner.html'
-				},
-				'content' : {
-					templateUrl: '/landing-page/templates/under-construction.html'
-					// templateUrl: '/landing-page/templates/research/main.html'
-				}
-			}
-		})
-		.state('research-design-projects', {
-			url : "/research/design-projects?key",
-			params : {
-				key : { value : "" }
-			},
-			views : {
-				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
-				},
-				'banner' : {
-					templateUrl: '/landing-page/templates/research/banner.html'
-				},
-				'content' : {
-					templateUrl: '/landing-page/templates/under-construction.html'
-					// templateUrl: '/landing-page/templates/research/design-projects.html'
-				}
-			}
-		})
-		.state('research-academic-papers', {
-			url : "/research/academic-papers?key",
-			params : {
-				key : { value : "" }
-			},
-			views : {
-				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
-				},
-				'banner' : {
-					templateUrl: '/landing-page/templates/research/banner.html'
-				},
-				'content' : {
-					templateUrl: '/landing-page/templates/under-construction.html'
-					// templateUrl: '/landing-page/templates/research/academic-papers.html'
-				}
-			}
-		})
-		.state('sponsorships', {
-			url : "/sponsorships?key",
-			params : {
-				key : { value : "" }
-			},
-			views : {
-				'navbar' : {
-					templateUrl: '/landing-page/templates/navbar/main.html'
-				},
-				'banner' : {
-					templateUrl: '/landing-page/templates/sponsorships/banner.html'
-				},
-				'content' : {
-					templateUrl: '/landing-page/templates/under-construction.html'
-					// templateUrl: '/landing-page/templates/sponsorships/main.html'
-				}
-			}
-		})
+		// .state('about-csdc', {
+		// 	url : "/about/csdc",
+		// 	views : {
+		// 		'navbar' : {
+		// 			templateUrl: '/templates/navbar/main.html'
+		// 		},
+		// 		'banner' : {
+		// 			templateUrl: '/templates/about/banner.html'
+		// 		},
+		// 		'content' : {
+		// 			templateUrl: '/templates/about/csdc.html'
+		// 		}
+		// 	}
+		// })
+		// .state('about-mssg', {
+		// 	url : "/about/mssg",
+		// 	views : {
+		// 		'navbar' : {
+		// 			templateUrl: '/templates/navbar/main.html'
+		// 		},
+		// 		'banner' : {
+		// 			templateUrl: '/templates/about/banner.html'
+		// 		},
+		// 		'content' : {
+		// 			templateUrl: '/templates/about/mssg.html'
+		// 		}
+		// 	}
+		// })
+		// .state('about-education', {
+		// 	url : "/about/education",
+		// 	views : {
+		// 		'navbar' : {
+		// 			templateUrl: '/templates/navbar/main.html'
+		// 		},
+		// 		'banner' : {
+		// 			templateUrl: '/templates/about/banner.html'
+		// 		},
+		// 		'content' : {
+		// 			templateUrl: '/templates/about/education.html'
+		// 		}
+		// 	}
+		// })
+		// .state('about-policy', {
+		// 	url : "/about/policy",
+		// 	views : {
+		// 		'navbar' : {
+		// 			templateUrl: '/templates/navbar/main.html'
+		// 		},
+		// 		'banner' : {
+		// 			templateUrl: '/templates/about/banner.html'
+		// 		},
+		// 		'content' : {
+		// 			templateUrl: '/templates/about/policy.html'
+		// 		}
+		// 	}
+		// })
+		// .state('about-contact', {
+		// 	url : "/about/contact",
+		// 	views : {
+		// 		'navbar' : {
+		// 			templateUrl: '/templates/navbar/main.html'
+		// 		},
+		// 		'banner' : {
+		// 			templateUrl: '/templates/about/banner.html'
+		// 		},
+		// 		'content' : {
+		// 			templateUrl: '/templates/about/contact.html'
+		// 		}
+		// 	}
+		// })
+		// .state('competitions', {
+		// 	url : "/competitions",
+		// 	views : {
+		// 		'navbar' : {
+		// 			templateUrl: '/templates/navbar/main.html'
+		// 		},
+		// 		'banner' : {
+		// 			templateUrl: '/templates/competitions/banner.html'
+		// 		},
+		// 		'content' : {
+		// 			templateUrl: '/templates/under-construction.html'
+		// 			// templateUrl: '/templates/competitions/main.html'
+		// 		}
+		// 	}
+		// })
+		// .state('competitions-csdc', {
+		// 	url : "/competitions/csdc",
+		// 	views : {
+		// 		'navbar' : {
+		// 			templateUrl: '/templates/navbar/main.html'
+		// 		},
+		// 		'banner' : {
+		// 			templateUrl: '/templates/competitions/banner.html'
+		// 		},
+		// 		'content' : {
+		// 			templateUrl: '/templates/under-construction.html'
+		// 			// templateUrl: '/templates/competitions/csdc.html'
+		// 		}
+		// 	}
+		// })
+		// .state('competitions-seds', {
+		// 	url : "/competitions/seds",
+		// 	views : {
+		// 		'navbar' : {
+		// 			templateUrl: '/templates/navbar/main.html'
+		// 		},
+		// 		'banner' : {
+		// 			templateUrl: '/templates/competitions/banner.html'
+		// 		},
+		// 		'content' : {
+		// 			templateUrl: '/templates/under-construction.html'
+		// 			// templateUrl: '/templates/competitions/seds.html'
+		// 		}
+		// 	}
+		// })
+		// .state('research', {
+		// 	url : "/research",
+		// 	views : {
+		// 		'navbar' : {
+		// 			templateUrl: '/templates/navbar/main.html'
+		// 		},
+		// 		'banner' : {
+		// 			templateUrl: '/templates/research/banner.html'
+		// 		},
+		// 		'content' : {
+		// 			templateUrl: '/templates/under-construction.html'
+		// 			// templateUrl: '/templates/research/main.html'
+		// 		}
+		// 	}
+		// })
+		// .state('research-design-projects', {
+		// 	url : "/research/design-projects",
+		// 	views : {
+		// 		'navbar' : {
+		// 			templateUrl: '/templates/navbar/main.html'
+		// 		},
+		// 		'banner' : {
+		// 			templateUrl: '/templates/research/banner.html'
+		// 		},
+		// 		'content' : {
+		// 			templateUrl: '/templates/under-construction.html'
+		// 			// templateUrl: '/templates/research/design-projects.html'
+		// 		}
+		// 	}
+		// })
+		// .state('research-academic-papers', {
+		// 	url : "/research/academic-papers",
+		// 	views : {
+		// 		'navbar' : {
+		// 			templateUrl: '/templates/navbar/main.html'
+		// 		},
+		// 		'banner' : {
+		// 			templateUrl: '/templates/research/banner.html'
+		// 		},
+		// 		'content' : {
+		// 			templateUrl: '/templates/under-construction.html'
+		// 			// templateUrl: '/templates/research/academic-papers.html'
+		// 		}
+		// 	}
+		// })
+		// .state('sponsorships', {
+		// 	url : "/sponsorships",
+		// 	views : {
+		// 		'navbar' : {
+		// 			templateUrl: '/templates/navbar/main.html'
+		// 		},
+		// 		'banner' : {
+		// 			templateUrl: '/templates/sponsorships/banner.html'
+		// 		},
+		// 		'content' : {
+		// 			templateUrl: '/templates/under-construction.html'
+		// 			// templateUrl: '/templates/sponsorships/main.html'
+		// 		}
+		// 	}
+		// })
 
 		$urlRouterProvider.otherwise('/');
 	}

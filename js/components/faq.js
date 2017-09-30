@@ -24,6 +24,6 @@ var Portfolio = function() {
   }
 }();
 
-$(document).ready(function() {
+ANGULAR_LOADER.ready('faq', function() {
   Portfolio.init();
 });

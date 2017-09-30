@@ -5,7 +5,7 @@ var MagnificPopup = function() {
   // Handle Magnific Popup
   var handleMagnificPopup = function() {
     // Image popup - vertical fit
-    $(document).ready(function() {
+    ANGULAR_LOADER.ready(function() {
       $('.js__popup__image').magnificPopup({
         type: 'image',
         closeOnContentClick: true,
@@ -17,7 +17,7 @@ var MagnificPopup = function() {
     });
 
     // Popup gallery
-    $(document).ready(function() {
+    ANGULAR_LOADER.ready(function() {
       $('.js__popup__gallery').magnificPopup({
         delegate: 'a.js__popup__gallery-child',
         type: 'image',
@@ -34,7 +34,7 @@ var MagnificPopup = function() {
     });
 
     // Multiple Galleries with a single popup
-    $(document).ready(function() {
+    ANGULAR_LOADER.ready(function() {
       $('.js__popup__multiple-image').magnificPopup({
         type: 'image',
         tLoading: 'Loading image #%curr%...',
@@ -49,7 +49,7 @@ var MagnificPopup = function() {
     });
 
     // Video iframes
-    $(document).ready(function() {
+    ANGULAR_LOADER.ready(function() {
       $('.js__popup__youtube, .js__popup__vimeo').magnificPopup({
         disableOn: 700,
         type: 'iframe',
@@ -68,6 +68,6 @@ var MagnificPopup = function() {
   }
 }();
 
-$(document).ready(function() {
+ANGULAR_LOADER.ready(function() {
   MagnificPopup.init();
 });

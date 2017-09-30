@@ -14,6 +14,6 @@ var Counter = function() {
   }
 }();
 
-$(document).ready(function() {
+ANGULAR_LOADER.ready('counter', function() {
   Counter.init();
 });

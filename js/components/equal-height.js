@@ -17,6 +17,6 @@ var EqualHeight = function() {
   }
 }();
 
-$(document).ready(function() {
+ANGULAR_LOADER.ready('equal-height', function() {
     EqualHeight.init();
 });

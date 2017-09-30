@@ -26,6 +26,6 @@ var HeaderSticky = function() {
   }
 }();
 
-$(document).ready(function() {
+ANGULAR_LOADER.ready('header-sticky', function() {
   HeaderSticky.init();
 });

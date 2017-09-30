@@ -22,6 +22,6 @@ var Portfolio = function() {
   }
 }();
 
-$(document).ready(function() {
+ANGULAR_LOADER.ready(function() {
   Portfolio.init();
 });

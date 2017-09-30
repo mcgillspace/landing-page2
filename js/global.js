@@ -127,6 +127,6 @@ var Global = function() {
   }
 }();
 
-$(document).ready(function() {
+ANGULAR_LOADER.ready(function() {
   Global.init();
 });

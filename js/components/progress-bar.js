@@ -4,7 +4,7 @@ var ProgressBar = function() {
 
   // Handle Progress Bar
   var handleProgressBar = function() {
-    $(document).ready(function() {
+    ANGULAR_LOADER.ready(function() {
       $('.progress').each(function() {
         $(this).appear(function() {
           $(this).animate({
@@ -29,6 +29,6 @@ var ProgressBar = function() {
   }
 }();
 
-$(document).ready(function() {
+ANGULAR_LOADER.ready(function() {
   ProgressBar.init();
 });

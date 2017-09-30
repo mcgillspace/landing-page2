@@ -17,6 +17,6 @@ var Wow = function() {
   }
 }();
 
-$(document).ready(function() {
+ANGULAR_LOADER.ready(function() {
   Wow.init();
 });

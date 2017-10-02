@@ -43,6 +43,6 @@ var Portfolio = function() {
   }
 }();
 
-ANGULAR_LOADER.ready(function() {
+ANGULAR_LOADER.ready('portfolio-4-col-slider', function() {
   Portfolio.init();
 });

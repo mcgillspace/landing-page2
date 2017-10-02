@@ -17,6 +17,6 @@ var Scrollbar = function() {
   }
 }();
 
-ANGULAR_LOADER.ready(function() {
+ANGULAR_LOADER.ready('scrollbar', function() {
   Scrollbar.init();
 });

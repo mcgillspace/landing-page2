@@ -112,7 +112,7 @@ var Global = function() {
       if(parent.attr('data-related')) {
         $(parent.attr('data-related')).css('height', parent.height());
       }
-   });       
+   });
   }
 
   return {
@@ -127,6 +127,6 @@ var Global = function() {
   }
 }();
 
-ANGULAR_LOADER.ready(function() {
+ANGULAR_LOADER.ready('global', function() {
   Global.init();
 });

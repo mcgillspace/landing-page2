@@ -7,8 +7,6 @@
 			ready : function (componentName, fn) {
 				eventTarget.addEventListener(componentName, function () {
 					fn.apply(document, arguments);
-				}, {
-					once: true
 				});
 			},
 			dispatch : function (componentName) {
@@ -19,7 +17,7 @@
 	})();
 
 	angular.module('app', ['ui.router'])
-		.run(function ($rootScope) {
+		.run(function ($rootScope, $window) {
 			function getComponentsOfState(state) {
 				var comps = [];
 				for (var view in state.views) {
@@ -33,13 +31,16 @@
 			}
 
 			$rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState) {
+				$window.scrollTo(0, 0);
 				event.targetScope.$watch("$viewContentLoaded", function () {
 					// console.log('viewContentLoaded', event, toState, toParams, fromState);
 					var toStateComps = getComponentsOfState(toState);
 					var fromStateComps = getComponentsOfState(fromState);
 					setTimeout(function () {
 						toStateComps.filter(comp => !fromStateComps.includes(comp)).forEach(ANGULAR_LOADER.dispatch);
-					}, 0);
+						ANGULAR_LOADER.dispatch('global');
+
+					}, 100);
 				});
 			});
 		});

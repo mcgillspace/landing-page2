@@ -57,15 +57,12 @@
 					}
 				},
 				'banner' : {
-					templateUrl: '/templates/index/banner.html',
-					data : {
-						components: ['about - banner']
-					}
+					templateUrl: '/templates/about/index/banner.html',
 				},
 				'content' : {
-					templateUrl: '/templates/about/main.html',
+					templateUrl: '/templates/about/index/main.html',
 					data : {
-						components: ['about - content']
+						components: ['portfolio-3-col']
 					}
 				},
 				'footer' : {
@@ -73,76 +70,134 @@
 				}
 			}
 		})
-		// .state('about-csdc', {
-		// 	url : "/about/csdc",
-		// 	views : {
-		// 		'navbar' : {
-		// 			templateUrl: '/templates/navbar/main.html'
-		// 		},
-		// 		'banner' : {
-		// 			templateUrl: '/templates/about/banner.html'
-		// 		},
-		// 		'content' : {
-		// 			templateUrl: '/templates/about/csdc.html'
-		// 		}
-		// 	}
-		// })
-		// .state('about-mssg', {
-		// 	url : "/about/mssg",
-		// 	views : {
-		// 		'navbar' : {
-		// 			templateUrl: '/templates/navbar/main.html'
-		// 		},
-		// 		'banner' : {
-		// 			templateUrl: '/templates/about/banner.html'
-		// 		},
-		// 		'content' : {
-		// 			templateUrl: '/templates/about/mssg.html'
-		// 		}
-		// 	}
-		// })
-		// .state('about-education', {
-		// 	url : "/about/education",
-		// 	views : {
-		// 		'navbar' : {
-		// 			templateUrl: '/templates/navbar/main.html'
-		// 		},
-		// 		'banner' : {
-		// 			templateUrl: '/templates/about/banner.html'
-		// 		},
-		// 		'content' : {
-		// 			templateUrl: '/templates/about/education.html'
-		// 		}
-		// 	}
-		// })
-		// .state('about-policy', {
-		// 	url : "/about/policy",
-		// 	views : {
-		// 		'navbar' : {
-		// 			templateUrl: '/templates/navbar/main.html'
-		// 		},
-		// 		'banner' : {
-		// 			templateUrl: '/templates/about/banner.html'
-		// 		},
-		// 		'content' : {
-		// 			templateUrl: '/templates/about/policy.html'
-		// 		}
-		// 	}
-		// })
-		// .state('about-contact', {
-		// 	url : "/about/contact",
-		// 	views : {
-		// 		'navbar' : {
-		// 			templateUrl: '/templates/navbar/main.html'
-		// 		},
-		// 		'banner' : {
-		// 			templateUrl: '/templates/about/banner.html'
-		// 		},
-		// 		'content' : {
-		// 			templateUrl: '/templates/about/contact.html'
-		// 		}
-		// 	}
-		// })
+		.state('about-csdc', {
+			url : "/about/csdc",
+			views : {
+				'navbar' : {
+					templateUrl: '/templates/navbar/main.html',
+					data : {
+						components: ['header-sticky']
+					}
+				},
+				'banner' : {
+					templateUrl: '/templates/about/csdc/banner.html'
+				},
+				'content' : {
+					templateUrl: '/templates/about/csdc/main.html'
+				},
+				'footer' : {
+					templateUrl: '/templates/footer/main.html'
+				}
+			}
+		})
+		.state('about-conferences', {
+			url : "/about/conferences",
+			views : {
+				'navbar' : {
+					templateUrl: '/templates/navbar/main.html',
+					data : {
+						components: ['header-sticky']
+					}
+				},
+				'banner' : {
+					templateUrl: '/templates/about/conferences/banner.html'
+				},
+				'content' : {
+					templateUrl: '/templates/about/conferences/main.html'
+				},
+				'footer' : {
+					templateUrl: '/templates/footer/main.html'
+				}
+			}
+		})
+		.state('about-mssg', {
+			url : "/about/mssg",
+			views : {
+				'navbar' : {
+					templateUrl: '/templates/navbar/main.html',
+					data : {
+						components: ['header-sticky']
+					}
+				},
+				'banner' : {
+					templateUrl: '/templates/about/mssg/banner.html'
+				},
+				'content' : {
+					templateUrl: '/templates/about/mssg/main.html'
+				},
+				'footer' : {
+					templateUrl: '/templates/footer/main.html'
+				}
+			}
+		})
+		.state('about-education', {
+			url : "/about/education",
+			views : {
+				'navbar' : {
+					templateUrl: '/templates/navbar/main.html',
+					data : {
+						components: ['header-sticky']
+					}
+				},
+				'banner' : {
+					templateUrl: '/templates/about/education/banner.html'
+				},
+				'content' : {
+					templateUrl: '/templates/about/education/main.html'
+				},
+				'footer' : {
+					templateUrl: '/templates/footer/main.html'
+				}
+			}
+		})
+		.state('about-policy', {
+			url : "/about/policy",
+			views : {
+				'navbar' : {
+					templateUrl: '/templates/navbar/main.html',
+					data : {
+						components: ['header-sticky']
+					}
+				},
+				'banner' : {
+					templateUrl: '/templates/about/policy/banner.html'
+				},
+				'content' : {
+					templateUrl: '/templates/about/policy/main.html'
+				},
+				'footer' : {
+					templateUrl: '/templates/footer/main.html'
+				}
+			}
+		})
+		.state('about-contact', {
+			url : "/about/contact",
+			views : {
+				'navbar' : {
+					templateUrl: '/templates/navbar/main.html'
+				},
+				'content' : {
+					templateUrl: '/templates/index/coming_soon.html'
+				},
+				'footer' : {
+					templateUrl: '/templates/footer/main.html'
+				}
+			}
+		})
+		.state('coming_soon', {
+			url : "/coming_soon",
+			views : {
+				'navbar' : {
+					templateUrl: '/templates/navbar/main.html'
+				},
+				'content' : {
+					templateUrl: '/templates/index/coming_soon.html'
+				},
+				'footer' : {
+					templateUrl: '/templates/footer/main.html'
+				}
+			}
+		})
 		// .state('competitions', {
 		// 	url : "/competitions",
 		// 	views : {

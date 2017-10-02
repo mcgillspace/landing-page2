@@ -14,6 +14,6 @@ var Parallax = function() {
   }
 }();
 
-ANGULAR_LOADER.ready(function() {
+ANGULAR_LOADER.ready('parallax', function() {
   Parallax.init();
 });

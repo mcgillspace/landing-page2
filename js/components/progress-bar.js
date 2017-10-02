@@ -29,6 +29,6 @@ var ProgressBar = function() {
   }
 }();
 
-ANGULAR_LOADER.ready(function() {
+ANGULAR_LOADER.ready('progress-bar', function() {
   ProgressBar.init();
 });

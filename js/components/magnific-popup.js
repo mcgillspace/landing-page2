@@ -68,6 +68,6 @@ var MagnificPopup = function() {
   }
 }();
 
-ANGULAR_LOADER.ready(function() {
+ANGULAR_LOADER.ready('magnific-popup', function() {
   MagnificPopup.init();
 });

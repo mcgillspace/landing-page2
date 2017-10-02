@@ -40,6 +40,6 @@ var Masonry = function() {
   }
 }();
 
-ANGULAR_LOADER.ready(function() {
+ANGULAR_LOADER.ready('masonry', function() {
   Masonry.init();
 });

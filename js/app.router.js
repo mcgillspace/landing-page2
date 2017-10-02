@@ -26,21 +26,15 @@
 			views : {
 				'navbar' : {
 					templateUrl: '/templates/navbar/main.html',
-					data : {
-						components: ['header-sticky']
-					}
+					data : { components: ['header-sticky'] }
 				},
 				'banner' : {
 					templateUrl: '/templates/index/banner.html',
-					data : {
-						components: ['index - banner']
-					}
+					data : { components: ['index - banner'] }
 				},
 				'content' : {
 					templateUrl: '/templates/index/main.html',
-					data : {
-						components: ['index - content']
-					}
+					data : { components: ['index - content'] }
 				},
 				'footer' : {
 					templateUrl: '/templates/footer/main.html'
@@ -52,18 +46,14 @@
 			views : {
 				'navbar' : {
 					templateUrl: '/templates/navbar/main.html',
-					data : {
-						components: ['header-sticky']
-					}
+					data : { components: ['header-sticky'] }
 				},
 				'banner' : {
 					templateUrl: '/templates/about/index/banner.html',
 				},
 				'content' : {
 					templateUrl: '/templates/about/index/main.html',
-					data : {
-						components: ['portfolio-3-col']
-					}
+					data : { components: ['portfolio-3-col'] }
 				},
 				'footer' : {
 					templateUrl: '/templates/footer/main.html'
@@ -75,9 +65,7 @@
 			views : {
 				'navbar' : {
 					templateUrl: '/templates/navbar/main.html',
-					data : {
-						components: ['header-sticky']
-					}
+					data : { components: ['header-sticky'] }
 				},
 				'banner' : {
 					templateUrl: '/templates/about/csdc/banner.html'
@@ -95,9 +83,7 @@
 			views : {
 				'navbar' : {
 					templateUrl: '/templates/navbar/main.html',
-					data : {
-						components: ['header-sticky']
-					}
+					data : { components: ['header-sticky'] }
 				},
 				'banner' : {
 					templateUrl: '/templates/about/conferences/banner.html'
@@ -115,9 +101,7 @@
 			views : {
 				'navbar' : {
 					templateUrl: '/templates/navbar/main.html',
-					data : {
-						components: ['header-sticky']
-					}
+					data : { components: ['header-sticky'] }
 				},
 				'banner' : {
 					templateUrl: '/templates/about/mssg/banner.html'
@@ -135,9 +119,7 @@
 			views : {
 				'navbar' : {
 					templateUrl: '/templates/navbar/main.html',
-					data : {
-						components: ['header-sticky']
-					}
+					data : { components: ['header-sticky'] }
 				},
 				'banner' : {
 					templateUrl: '/templates/about/education/banner.html'
@@ -155,9 +137,7 @@
 			views : {
 				'navbar' : {
 					templateUrl: '/templates/navbar/main.html',
-					data : {
-						components: ['header-sticky']
-					}
+					data : { components: ['header-sticky'] }
 				},
 				'banner' : {
 					templateUrl: '/templates/about/policy/banner.html'
@@ -170,14 +150,18 @@
 				}
 			}
 		})
-		.state('about-contact', {
-			url : "/about/contact",
+		.state('contact', {
+			url : "/contact",
 			views : {
 				'navbar' : {
-					templateUrl: '/templates/navbar/main.html'
+					templateUrl: '/templates/navbar/main.html',
+					data : { components: ['header-sticky'] }
+				},
+				'banner' : {
+					templateUrl: '/templates/about/index/banner.html'
 				},
 				'content' : {
-					templateUrl: '/templates/index/coming_soon.html'
+					templateUrl: '/templates/contact/main.html'
 				},
 				'footer' : {
 					templateUrl: '/templates/footer/main.html'

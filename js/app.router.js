@@ -272,21 +272,24 @@
 		// 		}
 		// 	}
 		// })
-		// .state('sponsorships', {
-		// 	url : "/sponsorships",
-		// 	views : {
-		// 		'navbar' : {
-		// 			templateUrl: '/templates/navbar/main.html'
-		// 		},
-		// 		'banner' : {
-		// 			templateUrl: '/templates/sponsorships/banner.html'
-		// 		},
-		// 		'content' : {
-		// 			templateUrl: '/templates/under-construction.html'
-		// 			// templateUrl: '/templates/sponsorships/main.html'
-		// 		}
-		// 	}
-		// })
+		.state('sponsorships', {
+			url : "/sponsorships",
+			views : {
+				'navbar' : {
+					templateUrl: '/templates/navbar/main.html'
+				},
+				// 'banner' : {
+				// 	templateUrl: '/templates/sponsorships/banner.html'
+				// },
+				'content' : {
+					templateUrl: '/templates/sponsorship/main.html'
+					// templateUrl: '/templates/sponsorships/main.html'
+				},
+				'footer' : {
+					templateUrl: '/templates/footer/main.html'
+				}
+			}
+		})
 
 		$urlRouterProvider.otherwise('/');
 	}

@@ -276,14 +276,15 @@
 			url : "/sponsorships",
 			views : {
 				'navbar' : {
-					templateUrl: '/templates/navbar/main.html'
+					templateUrl: '/templates/navbar/main.html',
+					data : { components: ['header-sticky'] }
 				},
-				// 'banner' : {
-				// 	templateUrl: '/templates/sponsorships/banner.html'
-				// },
+				'banner' : {
+					templateUrl: '/templates/sponsorships/banner.html'
+				},
 				'content' : {
-					templateUrl: '/templates/sponsorship/main.html'
-					// templateUrl: '/templates/sponsorships/main.html'
+					templateUrl: '/templates/sponsorships/main.html',
+					data : { components: ['counter'] }
 				},
 				'footer' : {
 					templateUrl: '/templates/footer/main.html'

@@ -26,15 +26,24 @@
 			views : {
 				'navbar' : {
 					templateUrl: '/templates/navbar/main.html',
-					data : { components: ['header-sticky'] }
+					data : {
+						components: ['header-sticky'],
+						onStart: [ANGULAR_LOADER.dispatch.bind(ANGULAR_LOADER, 'header-sticky')]
+					}
 				},
 				'banner' : {
 					templateUrl: '/templates/index/banner.html',
-					data : { components: ['index - banner'] }
+					data : {
+						components: ['index - banner'],
+						onStart: [ANGULAR_LOADER.dispatch.bind(ANGULAR_LOADER, 'header-sticky')]
+					}
 				},
 				'content' : {
 					templateUrl: '/templates/index/main.html',
-					data : { components: ['index - content'] }
+					data : {
+						components: ['index - content'],
+						onStart: [ANGULAR_LOADER.dispatch.bind(ANGULAR_LOADER, 'header-sticky')]
+					}
 				},
 				'footer' : {
 					templateUrl: '/templates/footer/main.html'
@@ -46,14 +55,20 @@
 			views : {
 				'navbar' : {
 					templateUrl: '/templates/navbar/main.html',
-					data : { components: ['header-sticky'] }
+					data : {
+						components: ['header-sticky'],
+						onStart: [ANGULAR_LOADER.dispatch.bind(ANGULAR_LOADER, 'header-sticky')]
+					}
 				},
 				'banner' : {
 					templateUrl: '/templates/about/index/banner.html',
 				},
 				'content' : {
 					templateUrl: '/templates/about/index/main.html',
-					data : { components: ['portfolio-3-col'] }
+					data : {
+						components: ['portfolio-3-col'],
+						onStart: [ANGULAR_LOADER.dispatch.bind(ANGULAR_LOADER, 'header-sticky')]
+					}
 				},
 				'footer' : {
 					templateUrl: '/templates/footer/main.html'
@@ -65,7 +80,10 @@
 			views : {
 				'navbar' : {
 					templateUrl: '/templates/navbar/main.html',
-					data : { components: ['header-sticky'] }
+					data : {
+						components: ['header-sticky'],
+						onStart: [ANGULAR_LOADER.dispatch.bind(ANGULAR_LOADER, 'header-sticky')]
+					}
 				},
 				'banner' : {
 					templateUrl: '/templates/about/csdc/banner.html'
@@ -83,7 +101,10 @@
 			views : {
 				'navbar' : {
 					templateUrl: '/templates/navbar/main.html',
-					data : { components: ['header-sticky'] }
+					data : {
+						components: ['header-sticky'],
+						onStart: [ANGULAR_LOADER.dispatch.bind(ANGULAR_LOADER, 'header-sticky')]
+					}
 				},
 				'banner' : {
 					templateUrl: '/templates/about/conferences/banner.html'
@@ -101,7 +122,10 @@
 			views : {
 				'navbar' : {
 					templateUrl: '/templates/navbar/main.html',
-					data : { components: ['header-sticky'] }
+					data : {
+						components: ['header-sticky'],
+						onStart: [ANGULAR_LOADER.dispatch.bind(ANGULAR_LOADER, 'header-sticky')]
+					}
 				},
 				'banner' : {
 					templateUrl: '/templates/about/mssg/banner.html'
@@ -119,7 +143,10 @@
 			views : {
 				'navbar' : {
 					templateUrl: '/templates/navbar/main.html',
-					data : { components: ['header-sticky'] }
+					data : {
+						components: ['header-sticky'],
+						onStart: [ANGULAR_LOADER.dispatch.bind(ANGULAR_LOADER, 'header-sticky')]
+					}
 				},
 				'banner' : {
 					templateUrl: '/templates/about/education/banner.html'
@@ -137,7 +164,10 @@
 			views : {
 				'navbar' : {
 					templateUrl: '/templates/navbar/main.html',
-					data : { components: ['header-sticky'] }
+					data : {
+						components: ['header-sticky'],
+						onStart: [ANGULAR_LOADER.dispatch.bind(ANGULAR_LOADER, 'header-sticky')]
+					}
 				},
 				'banner' : {
 					templateUrl: '/templates/about/policy/banner.html'
@@ -155,7 +185,10 @@
 			views : {
 				'navbar' : {
 					templateUrl: '/templates/navbar/main.html',
-					data : { components: ['header-sticky'] }
+					data : {
+						components: ['header-sticky'],
+						onStart: [ANGULAR_LOADER.dispatch.bind(ANGULAR_LOADER, 'header-sticky')]
+					}
 				},
 				'banner' : {
 					templateUrl: '/templates/about/index/banner.html'

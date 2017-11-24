@@ -18,12 +18,12 @@
 
 	angular.module('app', ['ui.router'])
 		.run(function ($rootScope, $window) {
-			function getComponentsOfState(state) {
+			function getDataPropertyOfState(state, property) {
 				var comps = [];
 				for (var view in state.views) {
 					if (state.views.hasOwnProperty(view)) {
-						if (state.views[view].data && state.views[view].data.components) {
-							comps = comps.concat(state.views[view].data.components);
+						if (state.views[view].data && state.views[view].data[property]) {
+							comps = comps.concat(state.views[view].data[property]);
 						}
 					}
 				}
@@ -34,11 +34,14 @@
 				$window.scrollTo(0, 0);
 				event.targetScope.$watch("$viewContentLoaded", function () {
 					// console.log('viewContentLoaded', event, toState, toParams, fromState);
-					var toStateComps = getComponentsOfState(toState);
-					var fromStateComps = getComponentsOfState(fromState);
+					var toStateComps = getDataPropertyOfState(toState, 'components');
+					var toStateStartFns = getDataPropertyOfState(toState, 'onStart');
+					var fromStateComps = getDataPropertyOfState(fromState, 'components');
 					setTimeout(function () {
 						toStateComps.filter(comp => !fromStateComps.includes(comp)).forEach(ANGULAR_LOADER.dispatch);
 						ANGULAR_LOADER.dispatch('global');
+
+						toStateStartFns.forEach(startFn => startFn());
 
 					}, 100);
 				});

@@ -324,6 +324,27 @@
 				}
 			}
 		})
+		.state('ourwork-education', {
+			url : "/ourwork/education",
+			views : {
+				'navbar' : {
+					templateUrl: '/templates/navbar/main.html',
+					data : {
+						components: ['header-sticky'],
+						onStart: [ANGULAR_LOADER.dispatch.bind(ANGULAR_LOADER, 'header-sticky')]
+					}
+				},
+				'banner' : {
+					templateUrl: '/templates/ourwork/education/banner.html'
+				},
+				'content' : {
+					templateUrl: '/templates/ourwork/education/main.html'
+				},
+				'footer' : {
+					templateUrl: '/templates/footer/main.html'
+				}
+			}
+		})
 
 		$urlRouterProvider.otherwise('/');
 	}

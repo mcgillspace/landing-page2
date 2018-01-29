@@ -187,6 +187,7 @@ a:focus {
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  margin: 20px;
 }
 
 .s-btn:focus, .s-btn:hover {
@@ -2128,6 +2129,10 @@ fieldset[disabled] .s-btn {
 
 /* Image Effect
 ------------------------------ */
+.img-responsive {
+    margin: 0 auto;
+}
+
 .s-portfolio__img-effect {
   position: relative;
   display: block;

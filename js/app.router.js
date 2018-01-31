@@ -338,7 +338,11 @@
 					templateUrl: '/templates/ourwork/education/banner.html'
 				},
 				'content' : {
-					templateUrl: '/templates/ourwork/education/main.html'
+					templateUrl: '/templates/ourwork/education/main.html',
+					data : {
+						components: ['portfolio-3-col'],
+						onStart: [ANGULAR_LOADER.dispatch.bind(ANGULAR_LOADER, 'header-sticky')]
+					}
 				},
 				'footer' : {
 					templateUrl: '/templates/footer/main.html'

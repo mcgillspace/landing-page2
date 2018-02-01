@@ -349,8 +349,8 @@
 				}
 			}
 		})
-		.state('ourwork-policy', {
-			url : "/ourwork/spirg",
+		.state('ourwork-papers', {
+			url : "/ourwork/papers",
 			views : {
 				'navbar' : {
 					templateUrl: '/templates/navbar/main.html',
@@ -360,10 +360,10 @@
 					}
 				},
 				'banner' : {
-					templateUrl: '/templates/ourwork/spirg/banner.html'
+					templateUrl: '/templates/ourwork/papers/banner.html'
 				},
 				'content' : {
-					templateUrl: '/templates/ourwork/spirg/main.html',
+					templateUrl: '/templates/ourwork/papers/main.html',
 					data : {
 						components: ['portfolio-3-col'],
 						onStart: [ANGULAR_LOADER.dispatch.bind(ANGULAR_LOADER, 'header-sticky')]

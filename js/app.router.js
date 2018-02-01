@@ -374,6 +374,31 @@
 				}
 			}
 		})
+		.state('papers-orbitservicing', {
+			url : "/ourwork/papers/orbitservicing",
+			views : {
+				'navbar' : {
+					templateUrl: '/templates/navbar/main.html',
+					data : {
+						components: ['header-sticky'],
+						onStart: [ANGULAR_LOADER.dispatch.bind(ANGULAR_LOADER, 'header-sticky')]
+					}
+				},
+				'banner' : {
+					templateUrl: '/templates/ourwork/papers/orbitservicing/banner.html'
+				},
+				'content' : {
+					templateUrl: '/templates/ourwork/papers/orbitservicing/main.html',
+					data : {
+						components: ['portfolio-3-col'],
+						onStart: [ANGULAR_LOADER.dispatch.bind(ANGULAR_LOADER, 'header-sticky')]
+					}
+				},
+				'footer' : {
+					templateUrl: '/templates/footer/main.html'
+				}
+			}
+		})
 
 		$urlRouterProvider.otherwise('/');
 	}

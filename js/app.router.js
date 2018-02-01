@@ -349,6 +349,31 @@
 				}
 			}
 		})
+		.state('ourwork-policy', {
+			url : "/ourwork/spirg",
+			views : {
+				'navbar' : {
+					templateUrl: '/templates/navbar/main.html',
+					data : {
+						components: ['header-sticky'],
+						onStart: [ANGULAR_LOADER.dispatch.bind(ANGULAR_LOADER, 'header-sticky')]
+					}
+				},
+				'banner' : {
+					templateUrl: '/templates/ourwork/spirg/banner.html'
+				},
+				'content' : {
+					templateUrl: '/templates/ourwork/spirg/main.html',
+					data : {
+						components: ['portfolio-3-col'],
+						onStart: [ANGULAR_LOADER.dispatch.bind(ANGULAR_LOADER, 'header-sticky')]
+					}
+				},
+				'footer' : {
+					templateUrl: '/templates/footer/main.html'
+				}
+			}
+		})
 
 		$urlRouterProvider.otherwise('/');
 	}

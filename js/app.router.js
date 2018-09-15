@@ -205,7 +205,11 @@
 			url : "/coming_soon",
 			views : {
 				'navbar' : {
-					templateUrl: '/templates/navbar/main.html'
+					templateUrl: '/templates/navbar/main.html',
+					data : {
+						components: ['header-sticky'],
+						onStart: [ANGULAR_LOADER.dispatch.bind(ANGULAR_LOADER, 'header-sticky')]
+					}
 				},
 				'content' : {
 					templateUrl: '/templates/index/coming_soon.html'

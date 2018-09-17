@@ -50,31 +50,31 @@
 				}
 			}
 		})
-		.state('about', {
-			url : "/about",
-			views : {
-				'navbar' : {
-					templateUrl: '/templates/navbar/main.html',
-					data : {
-						components: ['header-sticky'],
-						onStart: [ANGULAR_LOADER.dispatch.bind(ANGULAR_LOADER, 'header-sticky')]
-					}
-				},
-				'banner' : {
-					templateUrl: '/templates/about/index/banner.html',
-				},
-				'content' : {
-					templateUrl: '/templates/about/index/main.html',
-					data : {
-						components: ['portfolio-3-col'],
-						onStart: [ANGULAR_LOADER.dispatch.bind(ANGULAR_LOADER, 'header-sticky')]
-					}
-				},
-				'footer' : {
-					templateUrl: '/templates/footer/main.html'
-				}
-			}
-		})
+		// .state('about', {
+		// 	url : "/about",
+		// 	views : {
+		// 		'navbar' : {
+		// 			templateUrl: '/templates/navbar/main.html',
+		// 			data : {
+		// 				components: ['header-sticky'],
+		// 				onStart: [ANGULAR_LOADER.dispatch.bind(ANGULAR_LOADER, 'header-sticky')]
+		// 			}
+		// 		},
+		// 		'banner' : {
+		// 			templateUrl: '/templates/about/index/banner.html',
+		// 		},
+		// 		'content' : {
+		// 			templateUrl: '/templates/about/index/main.html',
+		// 			data : {
+		// 				components: ['portfolio-3-col'],
+		// 				onStart: [ANGULAR_LOADER.dispatch.bind(ANGULAR_LOADER, 'header-sticky')]
+		// 			}
+		// 		},
+		// 		'footer' : {
+		// 			templateUrl: '/templates/footer/main.html'
+		// 		}
+		// 	}
+		// })
 		.state('about-csdc', {
 			url : "/about/csdc",
 			views : {
@@ -234,21 +234,25 @@
 		// 		}
 		// 	}
 		// })
-		// .state('competitions-csdc', {
-		// 	url : "/competitions/csdc",
-		// 	views : {
-		// 		'navbar' : {
-		// 			templateUrl: '/templates/navbar/main.html'
-		// 		},
-		// 		'banner' : {
-		// 			templateUrl: '/templates/competitions/banner.html'
-		// 		},
-		// 		'content' : {
-		// 			templateUrl: '/templates/under-construction.html'
-		// 			// templateUrl: '/templates/competitions/csdc.html'
-		// 		}
-		// 	}
-		// })
+		.state('ourwork-csdc', {
+			url : "/ourwork/csdc",
+			views : {
+				'navbar' : {
+					templateUrl: '/templates/navbar/main.html',
+					data : {
+						components: ['header-sticky'],
+						onStart: [ANGULAR_LOADER.dispatch.bind(ANGULAR_LOADER, 'header-sticky')]
+					}
+				},
+				'banner' : {
+					templateUrl: '/templates/ourwork/csdc/banner.html'
+				},
+				'content' : {
+					templateUrl: '/templates/ourwork/csdc/main.html'
+					// templateUrl: '/templates/competitions/csdc.html'
+				}
+			}
+		})
 		// .state('competitions-seds', {
 		// 	url : "/competitions/seds",
 		// 	views : {

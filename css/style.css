@@ -97,7 +97,7 @@ h6 {
 
 em,
 li {
-  font-size: 1rem;
+  font-size: 1.075rem; /*Default was set to 1, this is better!*/
   font-weight: 300;
   color: #242424;
 }

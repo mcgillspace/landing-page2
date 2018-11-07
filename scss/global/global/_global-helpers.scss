@@ -53,6 +53,38 @@
   }
 }
 
+/*----------------------------------
+  Align to top-right
+------------------------------------*/
+
+.g-topright--xs {
+  @include position(absolute, $top: 5%, $left: 80%, $right: 0);
+  @include translate3d(0,-50%,0);
+}
+
+/* Small screen / phone */
+@include media-breakpoint-up(sm) {
+  .g-topright--sm {
+    @include position(absolute, $top: 5%, $left: 80%, $right: 0);
+    @include translate3d(0,-50%,0);
+  }
+}
+
+/* Medium screen / tablet */
+@include media-breakpoint-up(md) {
+  .g-topright--md {
+    @include position(absolute, $top: 5%, $left: 80%, $right: 0);
+    @include translate3d(0,-50%,0);
+  }
+}
+
+/* Extra large screen / wide desktop */
+@include media-breakpoint-up(lg) {
+  .g-topright--lg {
+    @include position(absolute, $top: 5%, $left: 80%, $right: 0);
+    @include translate3d(0,-50%,0);
+  }
+}
 
 /*----------------------------------
   Overflow
@@ -85,7 +117,7 @@
 
 .g-promo-section {
   @include position(relative);
-  
+
   .g-promo-section__img {
     &-left--xs { @include position(absolute, $top: 0, $left: 0); }
     &-right--xs { @include position(absolute, $top: 0, $right: 0); }
@@ -123,7 +155,7 @@
 
 .g-hor-centered-row--xs {
   @include hor-center-align-row;
-  
+
   .g-hor-centered-row__col {
     @include hor-center-align-col;
   }
@@ -133,7 +165,7 @@
 .g-hor-centered-row--sm {
   @include media-breakpoint-up(sm) {
     @include hor-center-align-row;
-    
+
     .g-hor-centered-row__col {
       @include hor-center-align-col;
     }
@@ -144,7 +176,7 @@
 .g-hor-centered-row--md {
   @include media-breakpoint-up(md) {
     @include hor-center-align-row;
-    
+
     .g-hor-centered-row__col {
       @include hor-center-align-col;
     }
@@ -155,7 +187,7 @@
 .g-hor-centered-row--lg {
   @include media-breakpoint-up(lg) {
     @include hor-center-align-row;
-    
+
     .g-hor-centered-row__col {
       @include hor-center-align-col;
     }
@@ -189,7 +221,7 @@
 
 .g-media {
   float: left;
-  
+
   &__body {
     overflow: hidden;
   }

@@ -121,6 +121,7 @@
   .g-promo-section__img {
     &-left--xs { @include position(absolute, $top: 0, $left: 0); }
     &-right--xs { @include position(absolute, $top: 0, $right: 0); }
+    &-center--xs { @include $left: 10% }
   }
 }
 
@@ -147,7 +148,6 @@
     &-right--lg { @include position(absolute, $top: 0, $right: 0); }
   }
 }
-
 
 /*----------------------------------
   Horizontal Center Align

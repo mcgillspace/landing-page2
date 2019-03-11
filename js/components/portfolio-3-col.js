@@ -2,6 +2,15 @@
 var Portfolio = function() {
   'use strict';
 
+  setTimeout(
+    function myFunction(){
+      if(document.getElementById("js__grid-portfolio-gallery").classList.length != 4){
+          document.location.reload(true);
+      }
+    },
+    5000
+  )
+
   // Handle Portfolio
   var handlePortfolio = function() {
     $('#js__grid-portfolio-gallery').cubeportfolio({
